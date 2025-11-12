@@ -5,12 +5,12 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
     <div className="w-full h-full bg-black text-white">
-      <div className="max-w-[1134px] m-auto py-13 gap-5 flex flex-row justify-between">
-        <div className="w-xl">
+      <div className="max-w-[1134px] m-auto mx-9 pt-13 pb-10 gap-5 flex lg:flex-row flex-col justify-between">
+        <div className="lg:w-xl">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 py-5">
             Best <span className="font-bold">Eats</span>
           </h1>
-          <p className="w-lg ml-3 pb-6">
+          <p className="md:w-150 lg:w-lg ml-3 pb-6">
             At Best Eats, we pride ourselves on delivering meals quickly.
             Whether craving a burger, salad, or pizza, our menu features local
             options, ensuring every meal is delightful. Enjoy ordering from
@@ -23,7 +23,7 @@ function Footer() {
             <FaGithub />
           </div>
         </div>
-        <div className="flex justify-between gap-15 py-8 list-none">
+        <div className="flex justify-between gap-10 sm:gap-15 py-8 list-none flex-wrap">
           <div>
             <h4 className="text-xl">Navigation</h4>
             <li>Home</li>
@@ -40,12 +40,19 @@ function Footer() {
             <li>Pricing & Plans</li>
           </div>
           <div>
-            <h4 className="text-xl">Payment Method</h4>
+            <h4 className="text-xl">Payment</h4>
             <li>Visa</li>
             <li>MasterCard</li>
             <li>PayPal</li>
           </div>
         </div>
+      </div>
+      <hr className="max-w-[1134px] m-auto" />
+      <div className="text-center py-5">
+        <p>
+          &copy; 2025 Speedy Eats. All rights reserved. Designed by{" "}
+          <span className="text-orange-600">PrathameshC</span>
+        </p>
       </div>
     </div>
   );
